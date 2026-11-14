@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>No Verbal. Soledad Imbach</title>
+<meta name="description" content="No Verbal, primer libro fotográfico de Soledad Imbach. 2016.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200..600;1,200..500&family=Italiana&family=Jost:ital,wght@0,200..600;1,200..500&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band-dark" id="top">
+  <div class="wrap topbar topbar--page">
+    <a class="brand" href="index.html">Soledad Imbach</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="index.html#obra">Obra</a>
+      <a href="index.html#audiovisual">Audiovisual</a>
+      <a href="index.html#libros">Libros</a>
+      <a href="index.html#exposiciones">Exposiciones</a>
+      <a href="index.html#textos">Textos</a>
+      <a href="sobre-soledad.html">Sobre Soledad</a>
+      <a href="index.html#otros">Otros trabajos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band-dark">
+    <div class="wrap page-head">
+      <h1 class="page-title">No Verbal</h1>
+      <p class="meta">Primer libro fotográfico. 2016. Edición agotada</p>
+    </div>
+    <div class="wrap">
+      <div class="text-body">
+      <p>No Verbal es mi primer libro de fotografía, publicado de manera independiente en 2016, en una edición limitada de 20 ejemplares. Un ensayo visual que nace de la necesidad de cuestionar la heteronorma, los mandatos sobre los cuerpos y las formas en que la sociedad construye, disciplina y regula nuestras identidades y nuestros deseos.</p>
+      <p>A través de la fotografía propongo una mirada crítica sobre aquello que se presenta como natural, pero que es profundamente político: los géneros, los vínculos, la sexualidad y las maneras legítimas de habitar el mundo.</p>
+      <p>No Verbal es también una búsqueda personal, una forma de desobediencia visual frente a los discursos que pretenden definir qué cuerpos pueden mostrarse, cómo deben comportarse y qué deseos merecen ser reconocidos.</p>
+      <p>Antes de encontrar las palabras, encontré las imágenes. Y entendí que fotografiar también podía ser una forma de insubordinación, porque ningún cuerpo debería necesitar permiso para existir.</p>
+      <p class="cierre">Antes de encontrar las palabras, encontré las imágenes.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/no-verbal/no-verbal-portada-01.webp" alt="Tapa del libro No Verbal, negra, con el título y el nombre Soledad Imbach en letras blancas, sobre una hoja de monstera." width="960" height="1280" loading="lazy" decoding="async"></figure>
+        <figure><video class="media-video" controls preload="none" playsinline width="640" height="360"><source src="img/no-verbal/no-verbal-hojeando-libro-03.mp4" type="video/mp4"></video></figure>
+        <figure><video class="media-video" controls preload="none" playsinline width="360" height="258"><source src="img/no-verbal/no-verbal-hojeando-libro-02.mp4" type="video/mp4"></video></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-light section">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Libros</h2>
+        <p class="lede">Seguir recorriendo</p>
+      </div>
+      <a class="more" href="index.html#libros">Volver a los libros</a>
+    </div>
+  </section>
+</main>
+
+<footer class="band-dark">
+  <p class="wrap foot">Soledad Imbach. Eldorado, Misiones, Argentina.</p>
+</footer>
+
+<script>
+(function(){
+  var top = document.getElementById("top");
+  var btn = document.getElementById("menu-btn");
+  function setMenu(open){
+    top.classList.toggle("nav-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open ? "Cerrar" : "Menú";
+  }
+  btn.addEventListener("click", function(){ setMenu(!top.classList.contains("nav-open")); });
+  document.querySelectorAll("#nav a").forEach(function(a){
+    a.addEventListener("click", function(){ setMenu(false); });
+  });
+})();
+</script>
+
+</body>
+</html>

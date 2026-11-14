@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Arrugas. Soledad Imbach</title>
+<meta name="description" content="Arrugas, ensayo fotográfico documental de Soledad Imbach en el Hogar Santa Marta, Eldorado. 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200..600;1,200..500&family=Italiana&family=Jost:ital,wght@0,200..600;1,200..500&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band-dark" id="top">
+  <div class="wrap topbar topbar--page">
+    <a class="brand" href="index.html">Soledad Imbach</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="index.html#obra">Obra</a>
+      <a href="index.html#audiovisual">Audiovisual</a>
+      <a href="index.html#libros">Libros</a>
+      <a href="index.html#exposiciones">Exposiciones</a>
+      <a href="index.html#textos">Textos</a>
+      <a href="sobre-soledad.html">Sobre Soledad</a>
+      <a href="index.html#otros">Otros trabajos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band-dark">
+    <div class="wrap page-head">
+      <h1 class="page-title">Arrugas</h1>
+      <p class="meta">Ensayo fotográfico documental. 2026. Hogar Santa Marta, Eldorado</p>
+    </div>
+    <div class="wrap">
+      <div class="text-body">
+      <p>Arrugas es un ensayo fotográfico documental realizado en el Hogar Santa Marta de Eldorado, Misiones, que propone detener la mirada sobre la vejez, los cuerpos que envejecen y las memorias que permanecen inscriptas en la piel.</p>
+      <p>Me interesa pensar las arrugas no como marcas del deterioro, sino como archivos vivos de la existencia. Cada pliegue guarda una historia, un trabajo, una pérdida, un deseo, una forma de haber resistido al tiempo. En una sociedad que celebra obsesivamente la juventud y vuelve cada vez más invisibles a las personas mayores, fotografiar la vejez es también una decisión política.</p>
+      <p>Este trabajo busca cuestionar las representaciones que reducen a las personas mayores a la fragilidad, la dependencia o la nostalgia. No pretendo romantizar la vejez ni convertirla en objeto de contemplación, sino reconocer la dignidad, la singularidad y la autonomía de quienes continúan habitando el mundo con sus propias historias.</p>
+      <p>Arrugas es una invitación a mirar aquello que muchas veces elegimos no ver, a discutir el edadismo y a comprender que el paso del tiempo no nos quita identidad, sino que acumula experiencias que merecen ser escuchadas.</p>
+      <p class="cierre">Porque una arruga no es una ausencia de juventud. Es la presencia irrepetible de una vida.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/arrugas/arrugas-brazos-manos-01.webp" alt="Antebrazos y manos de una persona mayor apoyados sobre el regazo, con una blusa clara, en blanco y negro." width="2000" height="1333" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/arrugas/arrugas-cuello-cabello-02.webp" alt="Primer plano del cuello y el cabello claro de una persona mayor vista de espaldas, en blanco y negro." width="1333" height="2000" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/arrugas/arrugas-piernas-pies-03.webp" alt="Piernas y pies descalzos de una persona mayor sentada, con las manos cruzadas sobre la falda." width="828" height="1242" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/arrugas/arrugas-mano-abierta-04.webp" alt="Palma abierta de la mano de una persona mayor, con los dedos extendidos, sobre fondo oscuro." width="683" height="1024" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/arrugas/arrugas-manos-mantel-05.webp" alt="Manos de una persona mayor apoyadas una sobre otra sobre un mantel a cuadros, en blanco y negro." width="1024" height="683" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/arrugas/arrugas-nuca-aros-06.webp" alt="Nuca y cuello de una persona de espaldas, con pelo corto y blanco y aros, sobre fondo negro." width="1203" height="1600" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-light section">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Obra</h2>
+        <p class="lede">Seguir recorriendo</p>
+      </div>
+      <a class="more" href="index.html#obra">Volver a la obra</a>
+    </div>
+  </section>
+</main>
+
+<footer class="band-dark">
+  <p class="wrap foot">Soledad Imbach. Eldorado, Misiones, Argentina.</p>
+</footer>
+
+<script>
+(function(){
+  var top = document.getElementById("top");
+  var btn = document.getElementById("menu-btn");
+  function setMenu(open){
+    top.classList.toggle("nav-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open ? "Cerrar" : "Menú";
+  }
+  btn.addEventListener("click", function(){ setMenu(!top.classList.contains("nav-open")); });
+  document.querySelectorAll("#nav a").forEach(function(a){
+    a.addEventListener("click", function(){ setMenu(false); });
+  });
+})();
+</script>
+
+</body>
+</html>

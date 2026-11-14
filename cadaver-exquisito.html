@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cadáver Exquisito. Soledad Imbach</title>
+<meta name="description" content="Cadáver Exquisito, ensayo fotográfico y político de Soledad Imbach. 2024.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200..600;1,200..500&family=Italiana&family=Jost:ital,wght@0,200..600;1,200..500&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band-dark" id="top">
+  <div class="wrap topbar topbar--page">
+    <a class="brand" href="index.html">Soledad Imbach</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="index.html#obra">Obra</a>
+      <a href="index.html#audiovisual">Audiovisual</a>
+      <a href="index.html#libros">Libros</a>
+      <a href="index.html#exposiciones">Exposiciones</a>
+      <a href="index.html#textos">Textos</a>
+      <a href="sobre-soledad.html">Sobre Soledad</a>
+      <a href="index.html#otros">Otros trabajos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band-dark">
+    <div class="wrap page-head">
+      <h1 class="page-title page-title--long">Cadáver Exquisito</h1>
+      <p class="meta">Ensayo fotográfico y político. 2024</p>
+    </div>
+    <div class="wrap">
+      <div class="text-body">
+      <p>Cadáver Exquisito es un ensayo visual que explora las tensiones entre el cuerpo, el poder, la memoria y las múltiples formas de violencia que atraviesan nuestra existencia. Una obra que se construye desde la fragmentación, la intervención y la posibilidad de producir nuevos sentidos a partir de aquello que parece roto, descartado o silenciado.</p>
+      <p>El título recupera el procedimiento surrealista del cadáver exquisito para pensar la imagen como un territorio en disputa, donde nada está definitivamente dicho y cada fragmento puede alterar el sentido del conjunto.</p>
+      <p>Mi fotografía no pretende ser neutral. Me interesa incomodar la mirada, cuestionar las representaciones dominantes y construir imágenes capaces de interpelar lo político desde lo sensible. En Cadáver Exquisito, el cuerpo deja de ser únicamente objeto de representación para convertirse en archivo, testimonio y territorio de resistencia.</p>
+      <p>La obra fue seleccionada para Impronta Misionera 2024, en el Centro del Conocimiento de Posadas, y también formó parte de experiencias expositivas e intervenciones colectivas, entre ellas una presentación en Casa Popular Artigas, con intervención digital de Lucila.</p>
+      <p>Cadáver Exquisito es, en definitiva, una pregunta sobre lo que hacemos con los restos de nuestra historia, con las imágenes heredadas y con aquello que todavía insiste en permanecer.</p>
+      <p class="cierre">Porque incluso lo que intentaron borrar conserva la posibilidad de decir algo.</p>
+      <p class="meta" style="margin-top:28px">Idea original, fotografía e iluminación: Soledad Imbach. Diseño y edición de fotos: Lucila Cardozo, Valparaíso, Chile.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/cadaver-exquisito/cadaver-exquisito-poster-memoria-01.webp" alt="Torso desnudo en tonos naranjas sobre fondo negro, con una mano sobre el abdomen y la palabra Memoria en vertical." width="1600" height="2000" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/cadaver-exquisito/cadaver-exquisito-poster-manifiesta-02.webp" alt="Torso desnudo en tonos naranjas con las manos sobre el cuerpo y una palabra en letras amarillas, sobre fondo negro." width="1600" height="2000" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/cadaver-exquisito/cadaver-exquisito-poster-rebelion-03.webp" alt="Espalda y glúteos desnudos en tonos naranjas sobre fondo negro, con la palabra Rebelión en letras amarillas." width="1600" height="2000" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-light section">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Obra</h2>
+        <p class="lede">Seguir recorriendo</p>
+      </div>
+      <a class="more" href="index.html#obra">Volver a la obra</a>
+    </div>
+  </section>
+</main>
+
+<footer class="band-dark">
+  <p class="wrap foot">Soledad Imbach. Eldorado, Misiones, Argentina.</p>
+</footer>
+
+<script>
+(function(){
+  var top = document.getElementById("top");
+  var btn = document.getElementById("menu-btn");
+  function setMenu(open){
+    top.classList.toggle("nav-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open ? "Cerrar" : "Menú";
+  }
+  btn.addEventListener("click", function(){ setMenu(!top.classList.contains("nav-open")); });
+  document.querySelectorAll("#nav a").forEach(function(a){
+    a.addEventListener("click", function(){ setMenu(false); });
+  });
+})();
+</script>
+
+</body>
+</html>

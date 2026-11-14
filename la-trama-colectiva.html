@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La Trama Colectiva. Soledad Imbach</title>
+<meta name="description" content="La Trama Colectiva, registro fotográfico documental de Soledad Imbach. 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200..600;1,200..500&family=Italiana&family=Jost:ital,wght@0,200..600;1,200..500&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band-dark" id="top">
+  <div class="wrap topbar topbar--page">
+    <a class="brand" href="index.html">Soledad Imbach</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="index.html#obra">Obra</a>
+      <a href="index.html#audiovisual">Audiovisual</a>
+      <a href="index.html#libros">Libros</a>
+      <a href="index.html#exposiciones">Exposiciones</a>
+      <a href="index.html#textos">Textos</a>
+      <a href="sobre-soledad.html">Sobre Soledad</a>
+      <a href="index.html#otros">Otros trabajos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band-dark">
+    <div class="wrap page-head">
+      <h1 class="page-title page-title--long">La Trama Colectiva</h1>
+      <p class="meta">Registro fotográfico documental, arte y feminismo. 2026</p>
+    </div>
+    <div class="wrap">
+      <div class="text-body">
+      <p>La Trama Colectiva es una experiencia de creación artística y construcción política que reúne a mujeres alrededor del cuerpo, la palabra, la escena y la memoria, en el marco de las actividades por el 25 de noviembre, Día Internacional de la Eliminación de la Violencia contra las Mujeres.</p>
+      <p>Mi participación desde la fotografía propone acompañar y documentar ese proceso colectivo, no solamente como registro de una práctica artística, sino como testimonio de una forma de organización, resistencia y producción de sentidos.</p>
+      <p>Me interesa fotografiar lo que sucede entre las mujeres cuando crean juntas, los gestos, las complicidades, las tensiones, los cuerpos que ocupan el espacio y las voces que se encuentran. Porque el feminismo también se construye en esos territorios sensibles donde lo personal deja de ser una experiencia aislada para convertirse en una fuerza colectiva.</p>
+      <p>En La Trama Colectiva la fotografía dialoga con las artes escénicas y la militancia feminista, entendiendo que el arte no está por fuera de las disputas políticas de nuestro tiempo.</p>
+      <p>No busco solamente documentar una obra. Me interesa dejar memoria de las mujeres que se organizan, que producen cultura y que se niegan a aceptar la violencia como destino.</p>
+      <p class="cierre">Porque ninguna trama se sostiene con un solo hilo y ninguna transformación feminista se construye en soledad.</p>
+      </div>
+    </div>
+    <div class="wrap" style="padding-bottom:clamp(48px,7vw,96px)"></div>
+  </section>
+
+  <section class="band-light section">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Obra</h2>
+        <p class="lede">Seguir recorriendo</p>
+      </div>
+      <a class="more" href="index.html#obra">Volver a la obra</a>
+    </div>
+  </section>
+</main>
+
+<footer class="band-dark">
+  <p class="wrap foot">Soledad Imbach. Eldorado, Misiones, Argentina.</p>
+</footer>
+
+<script>
+(function(){
+  var top = document.getElementById("top");
+  var btn = document.getElementById("menu-btn");
+  function setMenu(open){
+    top.classList.toggle("nav-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open ? "Cerrar" : "Menú";
+  }
+  btn.addEventListener("click", function(){ setMenu(!top.classList.contains("nav-open")); });
+  document.querySelectorAll("#nav a").forEach(function(a){
+    a.addEventListener("click", function(){ setMenu(false); });
+  });
+})();
+</script>
+
+</body>
+</html>

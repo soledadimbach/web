@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ausencias. Soledad Imbach</title>
+<meta name="description" content="Ausencias, ensayo y exposición fotográfica de Soledad Imbach. 2013.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200..600;1,200..500&family=Italiana&family=Jost:ital,wght@0,200..600;1,200..500&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band-dark" id="top">
+  <div class="wrap topbar topbar--page">
+    <a class="brand" href="index.html">Soledad Imbach</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="index.html#obra">Obra</a>
+      <a href="index.html#audiovisual">Audiovisual</a>
+      <a href="index.html#libros">Libros</a>
+      <a href="index.html#exposiciones">Exposiciones</a>
+      <a href="index.html#textos">Textos</a>
+      <a href="sobre-soledad.html">Sobre Soledad</a>
+      <a href="index.html#otros">Otros trabajos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band-dark">
+    <div class="wrap page-head">
+      <h1 class="page-title">Ausencias</h1>
+      <p class="meta">Ensayo y exposición fotográfica. 2013</p>
+    </div>
+    <div class="wrap">
+      <div class="text-body">
+      <p>Ausencias nace de una pregunta sobre los cuerpos de las mujeres, sobre aquello que se espera de nosotras y sobre todo lo que queda fuera de los márgenes de lo permitido. Un ensayo fotográfico que interroga la heteronorma, los mandatos de género y las formas históricas de representación de lo femenino.</p>
+      <p>A través de las imágenes busco explorar la ausencia no solamente como aquello que falta, sino también como aquello que fue silenciado, negado o expulsado de la mirada. Los cuerpos aparecen como territorios políticos, atravesados por el deseo, la memoria, las imposiciones sociales y las posibilidades de desobediencia.</p>
+      <p>Ausencias forma parte de mis primeras exploraciones de la fotografía como lenguaje artístico y herramienta de cuestionamiento político. Una búsqueda que años después continuaría en No Verbal (2016), mi primer libro fotográfico.</p>
+      <p class="cierre">Porque a veces lo más importante de una fotografía no es lo que muestra, sino aquello que nos obliga a preguntarnos por qué no está.</p>
+      </div>
+    </div>
+    <div class="wrap" style="padding-bottom:clamp(48px,7vw,96px)"></div>
+  </section>
+
+  <section class="band-light section">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Obra</h2>
+        <p class="lede">Seguir recorriendo</p>
+      </div>
+      <a class="more" href="index.html#obra">Volver a la obra</a>
+    </div>
+  </section>
+</main>
+
+<footer class="band-dark">
+  <p class="wrap foot">Soledad Imbach. Eldorado, Misiones, Argentina.</p>
+</footer>
+
+<script>
+(function(){
+  var top = document.getElementById("top");
+  var btn = document.getElementById("menu-btn");
+  function setMenu(open){
+    top.classList.toggle("nav-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open ? "Cerrar" : "Menú";
+  }
+  btn.addEventListener("click", function(){ setMenu(!top.classList.contains("nav-open")); });
+  document.querySelectorAll("#nav a").forEach(function(a){
+    a.addEventListener("click", function(){ setMenu(false); });
+  });
+})();
+</script>
+
+</body>
+</html>

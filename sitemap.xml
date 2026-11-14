@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://soledadimbach.com.ar/</loc>
-    <lastmod>2026-11-14</lastmod>
-  </url>
+  <url><loc>https://soledadimbach.com.ar/</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/sobre-soledad.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/cadaver-exquisito.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/ausencias.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/arrugas.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/paisajes-misioneros.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/la-trama-colectiva.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/julien-en-profundidad.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/verbal.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://soledadimbach.com.ar/no-verbal.html</loc><lastmod>2026-11-14</lastmod></url>
 </urlset>
