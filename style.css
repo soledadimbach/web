@@ -261,7 +261,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--black);outline-offs
 .page-title--long{font-size:clamp(40px,6.5vw,88px);line-height:1}
 .text-body{max-width:58ch;padding-bottom:clamp(40px,5vw,64px)}
 .text-body p{margin-top:18px}
-.text-body .cierre{font-family:var(--display);font-weight:var(--w-display);font-size:clamp(21px,2.1vw,26px);line-height:1.4;margin-top:28px}
+.text-body .cierre{font-style:italic;line-height:1.6;margin-top:28px}
 .text-body .cierre+.cierre{margin-top:14px}
 .nav a[aria-current="page"]{text-decoration:underline;text-decoration-color:var(--fluor);text-decoration-thickness:2px;text-underline-offset:.35em}
 .cv-index{margin:0 0 clamp(28px,3.5vw,44px);gap:4px 22px}
