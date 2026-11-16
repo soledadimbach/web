@@ -285,3 +285,46 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--black);outline-offs
 .slot.has-logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;padding:14% 16%;box-sizing:border-box}
 .gallery video,.media-video{display:block;width:100%;height:auto;background:#000;margin:0 0 clamp(10px,1.4vw,18px);break-inside:avoid}
 .gallery figure video{margin:0}
+
+/* Libros sobre fondo claro */
+.band-light .contratapa{border-top-color:var(--rule-light)}
+.band-light .ficha dt{color:var(--graphite)}
+
+/* Obra en venta */
+.venta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(22px,3.2vw,48px);align-items:center}
+.venta-grid .slot{--ar:3/2}
+.venta-text p{max-width:46ch}
+.venta-series{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px 10px}
+.venta-series li{font-size:15px;padding:5px 14px;border:1px solid var(--rule-light);border-radius:999px}
+@media(max-width:720px){.venta-grid{grid-template-columns:1fr}}
+/* Nota de venta en páginas de serie */
+.venta-note{margin-top:clamp(28px,3.5vw,44px);padding-top:18px;border-top:1px solid var(--rule-dark)}
+.venta-note strong{font-weight:500}
+.band-light .venta-note{border-top-color:var(--rule-light)}
+/* Crédito de estudio */
+.foot{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;justify-content:space-between}
+.foot .by{font-size:14px}
+.foot .by a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.25em;text-decoration-color:var(--rule-dark)}
+
+/* Audiovisual en texto (sin recuadro) */
+.av--text{max-width:62ch}
+.av--text + .av--text{margin-top:clamp(32px,4.5vw,60px)}
+/* Mail como enlace */
+.mail a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.08em}
+.mail a:hover{text-decoration-color:var(--fluor);text-decoration-thickness:2px}
+
+/* Figura en el CV y enlace de nota de venta */
+.cv-figure{margin:clamp(32px,4.5vw,56px) 0 0;max-width:420px}
+.cv-figure img{width:100%;height:auto;display:block;filter:grayscale(1)}
+.venta-note a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+.venta-note a:hover{text-decoration-color:var(--fluor);text-decoration-thickness:2px}
+
+.meta a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.15em}
+
+/* Página Obras en venta */
+.venta-lead{display:grid;grid-template-columns:1fr minmax(0,360px);gap:clamp(24px,4vw,56px);align-items:start}
+.venta-video{margin:0}
+.venta-video video{width:100%;height:auto;display:block;background:#000}
+.venta-video figcaption{margin-top:10px}
+.venta-serie-h{margin:clamp(44px,6vw,84px) 0 clamp(14px,2vw,22px);font-family:var(--display);font-weight:var(--w-display);font-size:clamp(24px,3.4vw,40px);line-height:1.1;letter-spacing:-.01em}
+@media (max-width:720px){.venta-lead{grid-template-columns:1fr}.venta-video{max-width:360px}}

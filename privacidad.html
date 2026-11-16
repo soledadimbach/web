@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Privacidad. Soledad Imbach</title>
+<meta name="description" content="Política de privacidad del sitio de Soledad Imbach. Qué datos se recopilan y cómo se usan.">
+<link rel="canonical" href="https://soledadimbach.com.ar/privacidad.html">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200..600;1,200..500&family=Italiana&family=Jost:ital,wght@0,200..600;1,200..500&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="band-dark" id="top">
+  <div class="wrap topbar topbar--page">
+    <a class="brand" href="index.html">Soledad Imbach</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="index.html#obra">Obra</a>
+      <a href="index.html#venta">Obras en venta</a>
+      <a href="index.html#audiovisual">Audiovisual</a>
+      <a href="index.html#libros">Libros</a>
+      <a href="index.html#exposiciones">Exposiciones</a>
+      <a href="sobre-soledad.html">Sobre Soledad</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band-light">
+    <div class="wrap page-head">
+      <h1 class="page-title">Privacidad</h1>
+      <p class="meta">Actualizado en noviembre de 2026</p>
+    </div>
+    <div class="wrap">
+      <div class="text-body">
+      <p>Este es un sitio de portfolio. No pide datos personales, no tiene formularios y no usa cookies de seguimiento ni herramientas de analítica.</p>
+      <p>El único dato que compartís es tu dirección de correo, y solo si decidís escribir al mail de contacto. Se usa para responderte y nada más. No se comparte ni se vende a terceros.</p>
+      <p>El sitio está alojado en Vercel. Como cualquier servidor web, registra de forma automática y temporal datos técnicos de cada visita, como la dirección IP y el tipo de navegador, con fines de funcionamiento y seguridad.</p>
+      <p>Los enlaces a Instagram y Facebook llevan a plataformas externas, que se rigen por sus propias políticas de privacidad.</p>
+      <p>Todas las fotografías y textos son obra de Soledad Imbach y están protegidos por derechos de autor. No pueden reproducirse sin autorización.</p>
+      <p class="cierre">Si en el futuro se agregan formularios o herramientas de medición, esta página se actualiza.</p>
+      <p class="meta" style="margin-top:28px">Consultas: <a href="mailto:soledadimbach@gmail.com">soledadimbach@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="band-dark">
+  <p class="wrap foot"><span>© 2026 Soledad Imbach. Eldorado, Misiones, Argentina.</span><span class="by"><a href="privacidad.html">Privacidad</a> · Sitio por <a href="https://onlike.ar/geo-site.html" target="_blank" rel="noopener">ONLIKE</a></span></p>
+</footer>
+
+<script>
+(function(){
+  var top = document.getElementById("top");
+  var btn = document.getElementById("menu-btn");
+  function setMenu(open){
+    top.classList.toggle("nav-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    btn.textContent = open ? "Cerrar" : "Menú";
+  }
+  btn.addEventListener("click", function(){ setMenu(!top.classList.contains("nav-open")); });
+  document.querySelectorAll("#nav a").forEach(function(a){
+    a.addEventListener("click", function(){ setMenu(false); });
+  });
+})();
+</script>
+
+</body>
+</html>
