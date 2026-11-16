@@ -328,3 +328,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--black);outline-offs
 .venta-video figcaption{margin-top:10px}
 .venta-serie-h{margin:clamp(44px,6vw,84px) 0 clamp(14px,2vw,22px);font-family:var(--display);font-weight:var(--w-display);font-size:clamp(24px,3.4vw,40px);line-height:1.1;letter-spacing:-.01em}
 @media (max-width:720px){.venta-lead{grid-template-columns:1fr}.venta-video{max-width:360px}}
+
+.sec-head h2 a{color:inherit;text-decoration:none}
+.sec-head h2 a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.1em;text-decoration-color:var(--fluor)}
