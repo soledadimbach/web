@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Página no encontrada — Soledad Imbach</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="La página que buscás no existe o cambió de lugar. Volvé al inicio del sitio de Soledad Imbach, artista visual, fotógrafa y autora.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200..600;1,200..500&family=Italiana&family=Jost:ital,wght@0,200..600;1,200..500&family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="band-dark" id="top">
+ <div class="wrap topbar topbar--page">
+ <a class="brand" href="/">Soledad Imbach</a>
+ <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+ <nav class="nav" id="nav" aria-label="Secciones">
+ <a href="/#obra">Obra</a>
+ <a href="/obras-en-venta.html">Obras en venta</a>
+ <a href="/#audiovisual">Audiovisual</a>
+ <a href="/#libros">Libros</a>
+ <a href="/#exposiciones">Exposiciones</a>
+ <a href="/sobre-soledad.html">Sobre Soledad</a>
+ <a href="/#contacto">Contacto</a>
+ </nav>
+ </div>
+</header>
+
+<main>
+ <section class="band-light section">
+ <div class="wrap page-head">
+ <h1 class="page-title page-title--long">Página no encontrada</h1>
+ <p class="meta">Error 404</p>
+ </div>
+ <div class="wrap">
+ <div class="text-body">
+ <p>La dirección que buscás no existe o cambió de lugar. Podés volver al inicio o ir directo a alguna de estas páginas.</p>
+ <ul class="sub">
+ <li><a class="more" href="/">Inicio</a></li>
+ <li><a class="more" href="/obras-en-venta.html">Obras en venta</a></li>
+ <li><a class="more" href="/sobre-soledad.html">Sobre Soledad</a></li>
+ <li><a class="more" href="/sitemap.xml">Mapa del sitio</a></li>
+ <li><a class="more" href="/llms.txt">llms.txt</a></li>
+ </ul>
+ </div>
+ </div>
+ </section>
+</main>
+
+<footer class="band-dark">
+ <p class="wrap foot"><span>© 2026 Soledad Imbach. Eldorado, Misiones, Argentina.</span><span class="by"><a href="/privacidad.html">Privacidad</a> · Sitio por <a href="https://onlike.ar/geo-site.html" target="_blank" rel="noopener">ONLIKE</a></span></p>
+</footer>
+
+<script>
+(function(){
+ var top = document.getElementById("top");
+ var btn = document.getElementById("menu-btn");
+ function setMenu(open){
+ top.classList.toggle("nav-open", open);
+ btn.setAttribute("aria-expanded", String(open));
+ btn.textContent = open ? "Cerrar" : "Menú";
+ }
+ btn.addEventListener("click", function(){ setMenu(!top.classList.contains("nav-open")); });
+ document.querySelectorAll("#nav a").forEach(function(a){
+ a.addEventListener("click", function(){ setMenu(false); });
+ });
+})();
+</script>
+
+</body>
+</html>
